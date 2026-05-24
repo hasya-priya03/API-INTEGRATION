@@ -32,3 +32,11 @@ The application uses NewsAPI for live news updates and provides a clean, respons
 * Dark mode support
 * Loading animations
 * Glassmorphism UI
+
+
+  ****output******
+  <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6ff45332-4356-494f-adf9-d1c1c9ede4a8" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/307475db-45fa-408b-8706-45ff1492565a" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/84a558d4-a16b-49d9-84f8-67cc8a5ac94d" />
