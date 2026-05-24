@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rapidVarthalu</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23102a43'/%3E%3Cpath d='M24 28h52v10H24zm0 18h52v10H24zm0 18h30v10H24z' fill='%23fff'/%3E%3Ccircle cx='76' cy='76' r='12' fill='%23f6a623'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">📰</div>
+        <h1>rapidVarthalu</h1>
+      </div>
+      <div class="controls">
+        <input id="search-input" type="text" placeholder="Search news..." aria-label="Search news">
+        <select id="language-select" aria-label="Select news language">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="te">Telugu</option>
+        </select>
+        <button id="search-button" type="button">Search</button>
+        <button id="refresh-button" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <div class="trending-bar">
+      <div class="trending-label">Trending now:</div>
+      <div class="trending-marquee">
+        <span id="trending-text">Loading trending headlines...</span>
+      </div>
+    </div>
+
+    <div class="categories-bar" aria-label="News categories">
+      <button class="category-chip active" data-category="education">Education</button>
+      <button class="category-chip" data-category="cricket">Cricket</button>
+      <button class="category-chip" data-category="technology">Technology</button>
+      <button class="category-chip" data-category="politics">Politics</button>
+      <button class="category-chip" data-category="movies">Movies</button>
+      <button class="category-chip" data-category="accidents">Accidents</button>
+      <button class="category-chip" data-category="business">Business</button>
+      <button class="category-chip" data-category="health">Health</button>
+    </div>
+
+    <main>
+      <section class="news-section">
+        <div class="news-info">
+          <h2>Latest headlines</h2>
+          <p>Use the search box to filter stories, or refresh to reload the latest news.</p>
+        </div>
+        <div id="news-container" class="news-grid">
+          <p class="loading-message">Loading news...</p>
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <div class="categories-grid">
+          <article class="category-block" id="category-block-education">
+            <div class="category-header">
+              <h3>Education</h3>
+              <p>Top education news</p>
+            </div>
+            <div id="category-education" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-cricket">
+            <div class="category-header">
+              <h3>Cricket</h3>
+              <p>Latest cricket updates</p>
+            </div>
+            <div id="category-cricket" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-technology">
+            <div class="category-header">
+              <h3>Technology</h3>
+              <p>Top tech stories</p>
+            </div>
+            <div id="category-technology" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-politics">
+            <div class="category-header">
+              <h3>Politics</h3>
+              <p>Latest political headlines</p>
+            </div>
+            <div id="category-politics" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-movies">
+            <div class="category-header">
+              <h3>Movies</h3>
+              <p>Film and entertainment news</p>
+            </div>
+            <div id="category-movies" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-accidents">
+            <div class="category-header">
+              <h3>Accidents</h3>
+              <p>Recent accident reports</p>
+            </div>
+            <div id="category-accidents" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-business">
+            <div class="category-header">
+              <h3>Business</h3>
+              <p>Market and economy updates</p>
+            </div>
+            <div id="category-business" class="news-grid"></div>
+          </article>
+          <article class="category-block" id="category-block-health">
+            <div class="category-header">
+              <h3>Health</h3>
+              <p>Health and wellness news</p>
+            </div>
+            <div id="category-health" class="news-grid"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
